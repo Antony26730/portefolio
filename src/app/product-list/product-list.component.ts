@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { PROJETS} from '../projets';
 import { products } from '../products';
 
 @Component({
@@ -7,8 +7,16 @@ import { products } from '../products';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
+  projet: PROJETS = {
+    id : 1,
+    name: 'L"art des choix restaurant',
+    description: "Restaurant snack installé au Cheylard pour lequel j'ai creer un site vitrine et une page produit facebook",
+   
+  };
   products = products;
+  title = "Mes projets";
+ 
 
   share() {
     window.alert('The product has been shared!');
