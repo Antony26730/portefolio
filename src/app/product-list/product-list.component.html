@@ -1,7 +1,15 @@
-<div><h2>{{title}}</h2>
-<h2>{{projet.name}}</h2><br>
+<div [ngStyle]="{backgroundImage : 'url(images/artdeschoix.png)'}">
+  <h2>{{title}}</h2>
+  <h2>{{projet.name}}</h2><br>
 
 <div><span> </span>{{projet.description}}</div>
+<br>
+</div>
+<div [ngStyle]="{'background' : 'url(./assets/artdeschoix.png)'}">
+
+<h2>{{projet2.name}}</h2><br>
+
+<div><span> </span>{{projet2.description}}</div>
 
 </div>
 <!-- 

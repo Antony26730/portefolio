@@ -14,8 +14,14 @@ export class ProductListComponent implements OnInit {
     description: "Restaurant snack installé au Cheylard pour lequel j'ai creer un site vitrine et une page produit facebook",
    
   };
+  projet2:PROJETS ={
+    id : 1,
+    name: "Site pour serrurier",
+    description: "description a faire"
+  }
   products = products;
   title = "Mes projets";
+  cheminImage:any = "artdeschoix.png";
  
 
   share() {
